@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.align-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.end{
+    
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    flex-direction: column;
+    border: 2px dotted rgb(79, 79, 180);
+    border-radius: 10px;
+}
+
+.f1{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+}
+
+.m1{
+    margin: 10px;
+}
+.product_name{
+    color: red;
+    font-family: 'Lobster', cursive;
+}
+.attraction{
+    color: rgb(37, 212, 37);
+    font-family: 'Satisfy', cursive;
+}

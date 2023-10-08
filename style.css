@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    /* align-items: center; */
+}
+
+.logo {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+}
+
+nav ul {
+    /* height: 60px; */
+    /*Here is a twist! If you set the height of the header and dont't set the height of the flexbox nav ul then if you set align-items: center all the items will align at the center of the box ul but the box itself will stick at the top of header so either you have to set the height here or you have to align all the items of the nav to the center*/
+    display: flex;
+    /* justify-content: flex-start; */
+    list-style: none;
+    align-items: center;
+
+}
+
+nav ul li {
+    padding: 16px;
+}
+
+nav ul li:hover {
+    /*Don't give any space between li and the : */
+    color: red;
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 58vw;
+    font-family: 'Tilt Prism', cursive;
+}
+
+
+.search input {
+    margin: 0px 11px 0px 0px;
+    padding: 0px 0px 0px 12px;
+    width: 30vw;
+    height: 35px;
+    border: 2px solid rebeccapurple;
+    border-radius: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.search ::placeholder{
+    font-family: 'Tilt Prism', cursive;
+    color: black;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+}
+
+.cart p{
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    min-height: calc(100vh - 60px - 12vh);
+    /*Don't forget to give the space between the '-' operator */
+}
+.container h1{
+    text-align: center;
+}
+.card1{
+    margin: 0px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card2{
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+}
+.items{
+    margin: 2px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 29vw;
+    width: 15vw;
+    justify-content: space-between;
+    /* justify-content: center; */
+    text-align: center;
+    
+
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+@media(max-width:500px){
+    header {
+        background-color: rgba(229, 255, 0, 0.899);
+        font-family: 'Roboto Condensed', sans-serif;
+        display: flex;
+        height: 60px;
+    }
+    .logo {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        height: 32px;
+        background-color: black;
+        align-items: center;
+        
+    }
+    .logo img{
+        height: 20px;
+
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        width: 58vw;
+        font-family: 'Tilt Prism', cursive;
+    }
+    .search input {
+        margin: 0px 11px 0px 0px;
+        padding: 0px 0px 0px 12px;
+        width: 30vw;
+        height: 35px;
+        border: 2px solid rebeccapurple;
+        border-radius: 50px;
+        font-family: 'Lobster', cursive;
+    }
+    nav u1{
+        display: none;
+    }
+}
+
+footer {
+    height: 12vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--main-bg-color);
+}

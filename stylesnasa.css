@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body::before{
+    content: "";
+    position: absolute;
+    background: url(ima.jpg) no-repeat center center/cover;
+    width: 100vw;
+    height: 706px;
+    z-index: -11;
+   opacity:0.9;
+   
+}
+.body{
+    color: white;
+    
+}
+#demo{
+    background-color: aqua;
+    color:blue;
+    border-color: rgb(21, 25, 17);
+    border-width: medium;
+    border-style: double;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+#aabb{
+    color: rgb(255, 0, 21);
+    text-align: center;
+}
+.form{
+    margin: 10px;
+    
+}
+.f{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    
+}
+.p{
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
